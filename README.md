@@ -6,8 +6,8 @@ Django practice
 
 Model View Template (MVT)
 Model = data structure
-View = http requests and rersponses and interaction
-Template = html files that contains stuctures
+View = http requests and responses and interaction
+Template = html files that contains structures
 
 ![img.png](img.png) - how django MVT works
 
@@ -26,3 +26,9 @@ Template = html files that contains stuctures
 #### cd into project_name startapp (py manage.py startapp app_name)
 
 #### run your server (py manage.py runserver)
+
+**********************
+#### create a shell with (py manage.py shell)
+##### you can add data to your db using the object_name.save() )
+
+#### create  superuser after setting up model in admin.py with = py manage.py createsuperuser
