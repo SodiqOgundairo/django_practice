@@ -3,5 +3,6 @@ from . import views
 
 # Define a list of url patterns
 urlpatterns = [
-    path('', views.index)
+    path('', views.index),
+    path('styling', views.styling)
 ]

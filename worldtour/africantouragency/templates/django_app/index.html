@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}" />
+  </head>
+  <body>
+    <h1>Welcome to my own django</h1>
+    <p>Welcome to my own django</p>
+    <img src=" {% static "images/logo.png" %} " alt="random icon">
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
