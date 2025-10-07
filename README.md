@@ -32,3 +32,7 @@ Template = html files that contains structures
 ##### you can add data to your db using the object_name.save() )
 
 #### create  superuser after setting up model in admin.py with = py manage.py createsuperuser
+
+### Statics file
+#### css, js, images etc
+#### static files store STATICFILES_DIR or STATIC_URL = 'static/' in settings.py
