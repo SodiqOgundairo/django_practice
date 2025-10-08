@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}" />
+    <title>FORM APP - HOME</title>
+  </head>
+  <body>
+    <div class="centered-content">
+      <img src=" {% static "images/logo.png" %} " alt="random icon" class="logo">
+      <form action="{% url 'contact' %}" method="get">
+        <button type="submit" class="btn">Click to Enter Form</button>
+      </form>
+        <a href="{% url "home" %}"> Back to Home </a>
+
+    </div>
+    {% comment %} <script src="{% static 'js/script.js' %}"></script> {% endcomment %}
+  </body>
+</html>
