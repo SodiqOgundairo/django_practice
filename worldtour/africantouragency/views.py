@@ -1,8 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Tour
 from .forms import ContactForm
-
-
 # Create your views here.
 
 
@@ -15,6 +13,9 @@ def index(request):
 def styling(request):
     return render(request, 'django_app/index.html')
 
+
+# *******************************************
+# FORMS APP
 
 # Home page for the form app
 def home_view(request):
@@ -37,3 +38,6 @@ def contact_view(request):
 # define the contact success page
 def contact_success_view(request):
     return render(request, 'form_app/success.html')
+
+
+# *****************************
