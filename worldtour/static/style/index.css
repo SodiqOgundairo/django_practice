@@ -7,13 +7,16 @@ body {
   overflow: hidden;
 }
 
-h1 {
+h1,
+h2 {
   color: #4a90e2;
 }
 
 a {
   text-decoration: none;
-  color: #4a90e2;
+  color: #aa92e2;
+  margin: 5px 50px;
+  padding: 5px 50px;
 }
 
 button,
@@ -92,4 +95,8 @@ textarea {
 
 img {
   width: 300px;
+}
+
+.error {
+  color: red;
 }

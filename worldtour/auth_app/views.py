@@ -22,7 +22,7 @@ def register_view(request):
                 user = User.objects.create_user(
                     username=username, password=password)
                 login(request, user)
-                return redirect('home')
+                return redirect('auth')
         else:
             form.add_error(None, "Username and password are required.")
     else:
@@ -39,7 +39,7 @@ def login_view(request):
         if user is not None:
             login(request, user)
             next_url = request.POST.get(
-                'next') or request.GET.get('next') or 'home'
+                'next') or request.GET.get('next') or 'auth'
             return redirect(next_url)
         else:
             error_message = "Invalid Credentials!"
@@ -69,4 +69,4 @@ class ProtectedView(LoginRequiredMixin, View):
     redirect_field_name = 'rediret_to'
 
     def get(self, request):
-        return render(request, 'registartion/protected.html')
+        return render(request, 'registration/protected.html')
